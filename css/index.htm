@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Temel stillendirme */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Kartı yukarıdan aşağıya açar */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transform: scaleY(0); /* Başlangıçta yüksekliği sıfır yapar */
+  transform-origin: top;
+   /* Yavaş bir animasyon ekler */
+}
+
+/* Hover olduğunda görünür hale getirme ve yukarıdan aşağıya açma */
+.dropdown:hover .dropdown-content {
+  display: block;
+  transform: scaleY(1);
+  transition: 1s;
+}
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Aç</button>
+        <div class="dropdown-content">
+          <a href="#">Seçenek 1</a>
+          <a href="#">Seçenek 2</a>
+          <a href="#">Seçenek 3</a>
+        </div>
+      </div>
+      
+</body>
+</html>

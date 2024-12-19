@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+
+@font-face {
+    font-family:'helvetica neun';
+    src: url('../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ Medium\ Extended/');
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('../font/proxima/ProximaNovaFont.otf');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+}
